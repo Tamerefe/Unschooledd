@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+body{
+    font-size: 16px;
+}
+
+.wait{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110.023%; /* 5.50113rem */ 
+    display: flex;
+    position: relative;
+    top: 10rem;
+    left: 4rem;
+}
+
+.form{
+    width: 34.47rem;
+    height: 4.5625rem;
+    border-radius: 1.25rem;
+    background: #FFF; 
+    display: flex;
+    position: relative;
+    top: 12rem;
+    left: 4rem;
+}
+
+.formbtn{
+    width: 8.6875rem;
+    height: 4.5625rem;
+    border-radius: 1.25rem;
+    background: #FF6200; 
+    border: 1px solid #FF6200;
+    display: flex;
+    position: relative;
+    font-family: Inter; 
+}
+
+.trn{
+    width: 32.6875rem;
+    height: 41.375rem;
+    display: flex;
+    position: relative;
+    left: 60rem;
+    bottom: 18rem;
+}
+
+.inpt{
+    width: 25rem;
+    height: 4rem;
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+    margin-right:0.5rem;
+    border: none;
+    font-family: Inter; 
+}
+
+.gnrl{
+    max-width: 400px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .wait {top: 3.5rem;left: 3.5rem; font-size: 4rem;}
+    .form {top: 5.5rem;left: 3.5rem; width: 20rem; height: 4.5rem;}
+    .formbtn{width: 8.5rem;height: 4.5rem; }
+    .trn {left: 50rem; width: 20rem; height: 28rem; bottom:15rem;}
+    .inpt{width: 25rem;height: 4rem; }
+
+}
+
+@media only screen and (max-width: 868px) {
+    body{font-size: 12px;}
+    .wait {top: 1.5rem;left: 1.5rem; font-size: 3rem;}
+    .form {top: 3.5rem;left: 1.5rem; width: 20rem; height: 3.5rem;}
+    .formbtn{width: 8.5rem;height: 3.5rem; }
+    .trn {left: 27rem; width: 14rem; height: 20rem; bottom:12rem;}
+    .inpt{width: 25rem;height: 3rem; }
+
+}
+
+@media only screen and (max-width: 600px) {
+    body{font-size: 8px;}
+    .wait {top: 1.5rem;left: 1.5rem; font-size: 3rem;}
+    .form {top: 3.5rem;left: 1.5rem; width: 20rem; height: 2.5rem;}
+    .formbtn{width: 6.5rem;height: 2.5rem; }
+    .trn {left: 21rem; width: 10rem; height: 15rem; bottom:11rem;}
+    .inpt{width: 25rem;height: 2rem; }
+    
+}
+
+
+@media only screen and (max-width: 468px) {
+    body{font-size: 4px;}
+    .wait {top: 1.5rem;left: 1.5rem; font-size: 3rem;}
+    .form {top: 3.5rem;left: 1.5rem; width: 20rem; height: 2.5rem;}
+    .formbtn{width: 6.5rem;height: 2.5rem; }
+    .trn {left: 21rem; width: 6rem; height: 10rem; bottom:11rem;}
+    .inpt{width: 25rem;height: 2rem; }
+
+}
