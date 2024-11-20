@@ -1,0 +1,199 @@
+@import url("https://fonts.cdnfonts.com/css/garet");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: black;
+  background: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+}
+
+.garet{
+  font-family: Garet;
+}
+// OLD VERSION 
+
+.button-27 {
+  text-decoration: none;
+  appearance: none;
+  background-color: #FF6200;
+  border: 0.25rem solid #FF6200;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &:hover {
+    background-color: #000000;
+    border: 0.25rem solid #000000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+}
+
+.btn-lg-l{
+  background-color: #FF6200; 
+  width: 8.57rem;
+  height: 4.5rem;
+  
+}
+
+// Carousel Team
+
+.containerz {
+	display: flex;
+	justify-content: center;
+
+  > div {
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+		background: url("../images/Team/ela.jpg") no-repeat 40% / cover;
+    }
+    &:nth-of-type(2) {
+		background: url("../images/Team/elelif.jpg") no-repeat 40% / cover;
+    }
+	  &:nth-of-type(3) {
+		background: url("../images/Team/eylul.jpg") no-repeat 40% / cover;
+    }
+	  &:nth-of-type(4) {
+		background: url("../images/Team/isill.jpg") no-repeat 40% / cover;
+    }
+	  &:nth-of-type(5) {
+		background: url("../images/Team/tamerserbia.jpg") no-repeat 40% / cover;
+    }
+
+    .contentz {
+      color: #fff;
+      display: flex;
+      opacity: 0;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+      }
+    }
+
+    &:hover {
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .contentz {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+}
+
+.content {
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-family: Garet;
+}
+
+// Navbar
+
+#example-one {
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  width: auto;
+}
+#example-one li {
+  display: inline-block;
+  margin-right: 50px;
+}
+#example-one a {
+  color: #bbb;
+  font-size: 14px;
+  float: left;
+  padding: 6px 0px 4px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#example-one a:hover {
+  color: #ee7474;
+}
+#magic-line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #ee7474;
+}
+.current_page_item a {
+  color: #ee7474 !important;
+}
+.ie6 #example-one li, .ie7 #example-one li {
+  display: inline;
+}
+.ie6 #magic-line {
+  bottom: -3px;
+}
+
+// 
+
+::-moz-selection { /* Code for Firefox */
+	color: white;
+	background: black;
+}
+  
+::selection {
+	color: white;
+	background: black;
+}
